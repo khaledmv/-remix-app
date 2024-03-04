@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import demoStyles from "~/styles/demoPage.css"
 export default function DemoPage(){
     return (
         <>
@@ -7,4 +8,9 @@ export default function DemoPage(){
         </>
     )  
 
+}
+
+
+export function links(){
+    return [{rel:"stylesheet", href:demoStyles}];
 }

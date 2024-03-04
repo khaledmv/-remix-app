@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import homePageStyle from "~/styles/homePage.css"
 
 export default function Index(){
   return (
@@ -7,4 +8,8 @@ export default function Index(){
      <Link to="/demo">Demo page</Link>
     </>
   )
+}
+
+export function links(){
+  return [{rel:'stylesheet',href:homePageStyle}];
 }
