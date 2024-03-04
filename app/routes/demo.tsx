@@ -1,10 +1,11 @@
 import { Link } from "@remix-run/react";
-import demoStyles from "~/styles/demoPage.css"
+import Note, { links as noteLinks} from "~/components/note";
 export default function DemoPage(){
     return (
         <>
          <h1>Demo page</h1>
          <Link to="/">Home Page</Link>
+         <Note/>
         </>
     )  
 
@@ -12,5 +13,5 @@ export default function DemoPage(){
 
 
 export function links(){
-    return [{rel:"stylesheet", href:demoStyles}];
+    return [...noteLinks()];
 }
