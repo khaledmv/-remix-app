@@ -2,15 +2,15 @@ import noteStyle from "~/styles/note.css";
 export default function Note(){
     return (
         <>
-          <form action="" method="post">
+          <form action="" method="post" id="note-form">
             <div>
-                <label htmlFor="fname"> First Name</label>
-                <input type="text" name="name" id="fname" />
+                <label htmlFor="title">Title</label>
+                <input type="text" name="title" id="title" />
             </div>
             
             <div>
-                <label htmlFor="flname">Last Name</label>
-                <input type="text" name="lastName" id="flname" />
+                <label htmlFor="content">Content</label>
+                <textarea  name="content" id="content" rows="5" required/>
             </div>
 
              <button type="submit">Submti</button>
